@@ -1,0 +1,455 @@
+@charset "utf-8";
+
+
+@media screen and (min-width:1330px){
+header>div,article>div{
+    width:1320px;
+    }
+#box03>div>div{
+    width:1100px;
+    }
+#box02>div{
+    width:980px;
+    }
+#box06>div>div{
+    width:1100px;
+    }
+}/*  */
+
+
+
+@media screen and (max-width:1329px) and (min-width:1150px){
+#box03>div>div{
+    width:1100px;
+    }
+#box06>div>div{
+    width:1100px;
+    }
+}/*  */
+
+
+
+@media screen and (max-width:1149px) and (min-width:990px){
+#box02>div{
+    width:980px;
+    }
+}/*  */
+
+
+@media screen and (max-width:989px) and (min-width:580px){
+    /* header */
+header{
+    position:fixed;
+    left:0; top:0;
+    width:100%;
+    z-index: 700;
+    }
+header>div{
+    display: block;
+    text-align: center;
+    }
+
+  /* nav */
+nav{
+      position:fixed;
+      /* left:0; */ 
+      left:-400px; top:0;
+      width:400px;
+      height:100%;
+      padding:0 40px;
+      box-sizing: border-box;
+      background-color:rgba(0,0,0,0.8);
+    }
+nav>ul{
+    width:100%; height:100%;
+    /* background-color:green; */
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    }
+nav>ul>li{
+    width:100%;
+    margin-left:0px;
+    border-bottom:1px solid #fff;
+    }
+nav>ul>li>a{
+    line-height: 60px;
+    }
+#btn{
+    display: block;
+    }
+nav.close{
+    display:block;
+    }
+
+
+    /* box01 */
+#box01{
+    height:100vh;
+    }
+#box01>h2{
+    width:100%;
+    border:none;
+    left:0; top:50%;
+    margin:-140px 0 0 0px;
+    font-size:50px;
+    }
+#box01>ul>li{
+    background-size:auto  100%;
+    }
+
+
+    /* box02 */
+#box02>div{
+    justify-content:space-evenly;
+    }
+
+
+    /* box03 */
+#box03>div>div{
+    padding-left: 0px;
+    }
+#box03>div>div>figure{
+    position:static;
+    text-align: center;
+    }
+#box03 .title{
+    text-align: center;
+    }
+
+
+    /* box04 */
+#box04>div>div{
+    display:block;
+    }
+#box04>div>div>div{
+    width:88vw;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    }
+#box04>div>div>div>.title{
+    text-align: center;
+    }
+#box04>div>div>div>.text{
+    width:auto;
+    }
+#box04>div>div>ul{
+    width:60vw;
+    margin: 0 auto;
+    overflow:hidden;
+    }
+
+
+      /* box05 */
+    /* 전체 : 버튼 */
+#box05 .box{
+    position: relative;
+    }
+#box05 #show{
+    width:80vw;
+    margin:0 auto;
+    }
+#box05 #all{
+    width:160vw;
+    /* display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around; */
+    }
+#box05 #all>figure{
+    width:24vw;
+    margin-bottom:0;
+    margin: 0 1.333333vw 0px;
+    }
+#box05 #all>figure>img{margin-bottom:15px;}
+        /* 버튼 군단 */
+#box05 .box>.prev{
+    position: absolute;
+    top:50%; left:3vw;
+    width:3vw; height:3vw;
+    background-color: red;
+    }
+#box05 .box>.next{
+    position: absolute;
+    top:50%; right:3vw;
+    width:3vw; height:3vw;
+    background-color: red;
+    }
+
+
+/* box06*/
+#box06>div>div{
+    width:88vw;
+    margin:0 auto;
+    display: block;
+    }
+#box06>div>div>div{
+    width:auto;
+    /* margin-bottom: 45px; */
+    }
+#box06>div>div>div .title{
+    text-align: center;
+    }
+#box06>div>div>div .text{
+    text-align: center;
+    width:auto;
+    }
+#box06>div>div>div dl{
+    width:76vw;
+    margin-bottom: 20px;
+    margin:0 auto 1px;
+    }
+#box06>div>div>div dl>dt{
+    display:inline-block;
+    }
+#box06>div>div>div dl>dd{
+    display:inline-block;
+    padding-left:0px;
+    }
+
+#box06>div>div>form{
+    width:76vw;
+    padding:0 0px;
+    margin:0 auto;
+    }
+}/*  */
+
+
+
+@media screen and (max-width:579px) and (min-width:230px){
+    /* 공통 */
+    #box02,#box03,#box04,#box05,#box06{
+        padding:40px 0;
+      }
+    div>h3{
+        font-size:35px;
+        text-align: center;
+        margin-bottom: 35px;
+      }
+    .title{
+        font-size:30px;
+        margin-bottom:30px;
+      }
+    .text{
+        margin-bottom:30px;
+      }
+    
+
+    /* header */
+    header{
+        position:fixed;
+        width:100%;
+        padding:10px 0;
+        z-index: 700;
+      }
+      header>div{
+        display:block;
+        text-align: center;
+      }
+      header h1>a{
+          font-weight: normal;
+      }
+
+    /* nav */
+    nav{
+        position:fixed;
+        /* left:0; */
+        left:-100%; 
+        top:0;
+        background-color: rgba(0,0,0,0.5);
+        width:100%; height:100%;
+        padding:10vw;
+        box-sizing: border-box;
+        z-index: 900; /* 안전빵 */
+    }
+    nav>ul{
+        flex-direction: column;
+        justify-content:center;
+        /* align-items: center; */
+      }
+      nav>ul>li{
+        margin-left:0px;
+        width:100%;
+        border-bottom: 1px solid white;
+      }
+      nav>ul>li>a{
+        line-height:80px;
+      }
+
+    /* box01 */
+    #box01{
+        /* width:auto; */
+        height : calc(100vh - 54px);
+      }
+      #box01>h2{
+        position:absolute;
+        left:0%; top:50%;
+        width:100%; height:auto;
+        border:none;
+        margin:-70px 0 0 0px;
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway',sans-serif; */
+        font-size:35px;
+        /* color:white;
+        font-weight: lighter;
+        line-height: 70px;
+        text-align: center; */
+      }
+      #box01>ul>li{
+        background:url('../images/blue.jpg') no-repeat center top;
+        background-position:right top;
+        background-size: auto 100%;
+      }
+      #box01>.prev{
+        width:5vw; height:5vw;
+        left:5vw;
+        margin-top:-2.5vw;
+      }
+      #box01>.next{
+        width:5vw; height:5vw;
+        right:5vw;
+        margin-top:-2.5vw;
+      }
+
+
+      /* box02 */
+      #box02>div{
+        width:90vw;
+        display:block;
+      }
+      #box02>div>dl{
+        width:auto;
+        padding:20px 0;
+        background-image:none;
+        margin-bottom: 25px;
+      }
+      #box02>div>dl:nth-child(2){background-image:none;}
+      #box02>div>dl:nth-child(3){background-image:none;}
+      #box02>div>dl:last-child{margin-bottom: 0;}
+      #box02>div>dl>dt{
+        margin-bottom: 20px;
+      }
+
+
+      /* box03 */
+      #box03>div>div{
+        width:auto;
+        padding-left:0px;
+      }
+      #box03>div>div>figure{
+        position: static;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      #box03>div>div>div{
+          width:90vw;
+          margin:0 auto;
+      }
+      #box03>div>div>div>.title{
+        text-align:center;
+      }
+      #box03 .btn{
+        text-align:center;
+      }
+
+      /* box04 */
+      #box04>div>div{
+        width:90vw;
+        display:block;
+        margin: 0 auto;
+      }
+      #box04>div>div>div{
+        /* width:50%; */
+        width:auto;
+      }
+      #box04>div>div>div>.title{
+          text-align: center;
+      }
+      #box04>div>div>div>.text{
+        width:auto;
+        text-align: center;
+      }
+      #box04>div>div>ul{
+        width:80vw;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+
+
+
+      /* box05 */
+      #box05 .box{
+        position: relative;
+      }
+      #box05 #show{
+        width:80vw;
+        margin:0 auto;
+        /* overflow: hidden; */
+      }
+      #box05 #all{
+        width:240vw;
+      }
+      #box05 #all>figure{
+        width:30vw;
+        margin-bottom:0px;
+        margin: 0 2.5vw;
+      }
+      #box05 #all>figure>img{
+        margin-bottom:10px;
+      }
+      
+        /* 버튼 군단 */
+      #box05 .box>.prev{
+          width:5vw; height:5vw;
+          position:absolute;
+          left:2.5vw; top:50%;
+          margin-top:-2.5vw;
+          background-color: red;
+      }
+      #box05 .box>.next{
+        width:5vw; height:5vw;
+        position:absolute;
+        right:2.5vw; top:50%;
+        margin-top:-2.5vw;
+        background-color: red;
+      }
+
+
+      /* box06 */
+      #box06>div>div{
+        width:88vw;
+        margin:0 auto;
+        display: block;
+        }
+    #box06>div>div>div{
+        width:auto;
+        /* margin-bottom: 45px; */
+        }
+    #box06>div>div>div .title{
+        text-align: center;
+        }
+    #box06>div>div>div .text{
+        text-align: center;
+        width:auto;
+        }
+    #box06>div>div>div dl{
+        width:76vw;
+        margin-bottom: 20px;
+        margin:0 auto 1px;
+        }
+    #box06>div>div>div dl>dt{
+        display:inline-block;
+        }
+    #box06>div>div>div dl>dd{
+        display:inline-block;
+        padding-left:0px;
+        }
+    
+    #box06>div>div>form{
+        width:76vw;
+        padding:0 0px;
+        margin:0 auto;
+        }
+        /* sample */
+}/*  */
