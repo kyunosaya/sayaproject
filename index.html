@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +8,24 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/index_media.css">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/index.js"></script>
 </head>
 <body>
+<div id="wrapAll">
   <div id="wrap">
     <header>
       <div>
-        <h1><a href="#wrap">Kyuno saya</a></h1>
+        <h1><a href="#wrap">Saya's portfolio</a></h1>
         <nav>
           <h2 class="hide">메인내비게이션</h2>
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">INFO</a></li>
-            <li><a href="#">SKILL</a></li>
-            <li><a href="#">WORK</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#wrap">HOME</a></li>
+            <li><a href="#box02">INFO</a></li>
+            <li><a href="#box03">ABOUT</a></li>
+            <li><a href="#box04">SKILL</a></li>
+            <li><a href="#box05">WORK</a></li>
+            <li><a href="#box06">CONTACT</a></li>
           </ul>
           <p class="close">
             <span></span>
@@ -30,11 +33,8 @@
           </p>
         </nav>
       </div>
-      
-  <!-- 모바일버튼 -->
+      <!-- 타블렛,모바일 버튼 -->
       <p id="btn">
-        <span></span>
-        <span></span>
         <span></span>
         <span></span>
         <span></span>
@@ -44,40 +44,27 @@
   
   <!-- box01 -->
   <article id="box01">
-      <h2>We Design & Build<br>Creative Products</h2>
+      <h2>성실한 개발자가 되고 싶은<br>큐노사야입니다.</h2>
       <ul>
         <li class="no01">work01</li>
-        <li class="no02">work02</li>
-        <li class="no03">work03</li>
-        <li class="no04">work04</li>
       </ul>
-  
-      <p class="prev"></p>
-      <p class="next"></p>
-  
-      <p class="no">
-        <a href="#">no01</a>
-        <a href="#">no02</a>
-        <a href="#">no03</a>
-        <a href="#">no04</a>
-      </p>
   </article>
   
   <!-- #box02 -->
     <article id="box02">
       <div>
-        <h3 class="hide">나의 슬로건</h3>
+        <h3 class="hide">포부</h3>
         <dl>
-          <dt>My Story</dt>
-          <dd>Lorem ipsum dolor sit amet, consectetuer et sit adipiscing justo.</dd>
+          <dt>성실</dt>
+          <dd>제가 해야 할 일을 꾸준히 그리고 책임감을 가지고 하겠습니다.</dd>
         </dl>
         <dl>
-          <dt>My Story</dt>
-          <dd>Lorem ipsum dolor sit amet, consectetuer et sit adipiscing justo.</dd>
+          <dt>열정</dt>
+          <dd>열의를 가지고 일을 하며 개인적으로 성장을 위한 공부를 하겠습니다.</dd>
         </dl>
         <dl>
-          <dt>My Story</dt>
-          <dd>Lorem ipsum dolor sit amet, consectetuer et sit adipiscing justo.</dd>
+          <dt>소통</dt>
+          <dd>다른 팀원의 말을 경청하고 소통을 중요시 생각하겠습니다.</dd>
         </dl>
       </div>
     </article>
@@ -87,13 +74,26 @@
       <div>
       <h3>About Me</h3>
       <div>
-        <figure><img src="images/icon/people.png" alt="Kyuno saya">
+        <figure><img src="./images/kyunosaya_profil01.jpg" alt="Kyuno saya">
           <figcaption class="hide">나의 이미지</figcaption>
         </figure>
           <div>
-            <p class="title">NEED ACREATIVE PRODUCT?<br>I CAN HELP YOU!</p>
-            <p class="text">Hi! I’m Muhammad Mabrouk, and I’m a developer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.</p>
-            <p class="btn"><button type="button">Hear me</button></p>
+            <p class="title">
+              성실한 프론트엔드 개발자가 되고 싶은<br>큐노사야입니다.
+            </p>
+            <div class="text">
+              <p>호텔 경영 학과를 졸업하고 줄곧 서비스직으로 일을 하다가 IT업계에 흥미가 생겼고 프론트엔드 개발자가 되고 싶다는 생각을 하게 되었습니다.저에게 낯선 분야라는 이유로 도전을 포기하고 싶지 않았기에 두렵지만 감히 뛰어들었습니다. 그렇게 저의 꿈은 시작되었습니다.</p>
+              <p>학원을 다니며 공부를 시작했습니다. 새로운 것들을 공부할수록 즐거웠고 개발을 할수록 그 과정이 흥미로웠습니다. 멈추지않고 현재까지 제가 배운 것들을 더 공부할 예정이고 필요하다면 다른 언어들도 추가적으로 공부할 것입니다.</p>
+              <p>아직 부족한 점이 많지만 앞으로 계속 성장할 저의 모습을 보여드리고 싶습니다. 팀원의 일부분이라는 책임감을 가지고 일하겠습니다.</p>
+
+              <i>더 자세한 사항은 이력서를 확인해주시면 감사하겠습니다.</i>
+            </div>
+              
+            <p class="btn">
+              <button type="button">
+                <a href="./resume/큐노사야_프론트엔드_이력서.pdf" target="_blank">이력서 보기</a>
+              </button>
+            </p>
           </div>
       </div>
      </div>
@@ -105,18 +105,21 @@
       <h3>My Skill</h3>
       <div>
         <div>
-          <p class="title">What My Programming Skills Included?</p>
-          <p class="text">I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.</p>
+          <ul class="text">
+            <li>HTML과 CSS로 주어진 디자인 레이아웃을 보고 따라서 페이지를 디자인할 수 있습니다. </li>
+            <li>CSS Media Query를 사용하여 반응형 웹을 만들 수 있습니다. </li>
+            <li>Java Script, JQuery, React를 사용하여 DOM 객체를 제어할 수 있습니다.</li>
+            <li>github에서 branch를 만들 수 있습니다.</li>
+          </ul>
         </div>
         <ul>
-          <li><a href="#"><img src="" alt="">html</a></li>
-          <li><a href="#"><img src="" alt="">css</a></li>
-          <li><a href="#"><img src="" alt="">Javascript</a></li>
-          <li><a href="#"><img src="" alt="">jquery</a></li>
-          <li><a href="#"><img src="" alt="">Vue</a></li>
-          <li><a href="#"><img src="" alt="">React</a></li>
-          <li><a href="#"><img src="" alt="">GitHub</a></li>
-          <li><a href="#"><img src="" alt="">Npm</a></li>
+          <li title="HTML">html</li>
+          <li title="CSS">css</li>
+          <li title="Javascript">Javascript</li>
+          <li title="jquery">jquery</li>
+          <li title="React">React</li>
+          <li title="GitHub">GitHub</li>
+          <li title="npm">Npm</li>
         </ul>
       </div>
     </div>
@@ -125,50 +128,51 @@
   <!-- #box05 -->
   <article id="box05">
     <div>
-      <h3>MY WORKS</h3>
-      <p class="title">SEE MY WORKS <br>WHICH WILL AMAZE YOU!</p>
-      <p class="text">We develop the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.</p>
-      <ul>
-        <li><a href="">HTML</a></li>
-        <li><a href="">CSS</a></li>
-        <li><a href="">Javascript</a></li>
-        <li><a href="">JQuery</a></li>
-        <li><a href="">React</a></li>
-      </ul>
+      <h3>MY Portfolio</h3>
       <!-- gallery -->
       <div class="box">
-       <div id="show">
-         <div id="all">
+        <div id="all">
+          
           <figure>
-            <img src="./images/pic01.png" alt="work01">
-             <figcaption>work01</figcaption>         
+            <figcaption>
+              <p class="title">CHICOR 핸드크림 프로모션 홈페이지</p>
+              <div class="text">제가 배운 것들을 사용하여 만든 홈페이지입니다. figma로 디자인을 만들고 HTML,CSS,Javascript,JQuery,React를 사용했습니다.
+                <div class="btns">
+                  <button>
+                    <a href="">portfolio</a>
+                  </button>
+                  <button>
+                    <a href="https://github.com/kyunosaya/project">github</a>
+                  </button>
+                  <button>
+                    <a href="">live</a>
+                  </button>
+                </div>
+              </div>
+            </figcaption>
+            <img src="./images/CHICOR_HANDCREAM_-_Chrome_2022-10-02_03-41-05_AdobeExpress_AdobeExpress_AdobeExpress.gif" alt="work01">
           </figure>
+
           <figure>
-            <img src="./images/pic02.png" alt="work02">
-             <figcaption>work02</figcaption>         
+            <figcaption>
+              <p class="title">Tiffany &Co.</p>
+              <div class="text">React를 사용하여 이름 검색과 가격,날짜 순으로 나열할 수 있는 등의 기능을 구현했습니다.
+                <div class="btns">
+                  <button>
+                    <a href="https://github.com/kyunosaya/tiffany">github</a>
+                  </button>
+                  <button>
+                    <a href="">live</a>
+                  </button>
+                </div>
+              </div>
+
+            </figcaption>
+            <img src="./images/Tiffany_-_Chrome_2022-10-02_03-40-20_AdobeExpress_AdobeExpress_AdobeExpress.gif" alt="work01">
           </figure>
-          <figure>
-            <img src="./images/pic03.png" alt="work03">
-             <figcaption>work03</figcaption>         
-          </figure>
-          <figure>
-            <img src="./images/pic04.png" alt="work04">
-             <figcaption>work04</figcaption>         
-          </figure>
-          <figure>
-            <img src="./images/pic01.png" alt="work05">
-             <figcaption>work05</figcaption>         
-          </figure>
-          <figure>
-            <img src="./images/pic02.png" alt="work06">
-             <figcaption>work06</figcaption>         
-          </figure>
-  
+
          </div>   <!-- #all -->
-       </div>   <!-- #show -->
-      <p class="prev"></p>
-      <p class="next"></p>
-    </div>
+    </div> <!-- box -->
   </article>
   
   <!-- #box06 -->
@@ -176,47 +180,31 @@
     <div>
       <h3>Contact</h3>
       <div>
-        <div>
-          <p class="title">Have you Any Project? <br>
-          Please Drop a Message</p>
-          <p class="text">Get in touch and let me know how i can help. Fill out the from and i'll be in touch as soon as possible.</p>
+        <section>
         <dl>
-          <dt>주소 : </dt>
-          <dd>서울특별시 노원구 상계동</dd>
-        </dl>
-        <dl>
-          <dt>휴대폰 : </dt>
+          <dt>
+            <a href="tel:010-4934-8131">
+              <img src="./images/icon/icons8-phone-30.png" alt="phone">
+            </a>
+          </dt>
           <dd><a href="tel:010-4934-8131">010-4934-8131</a></dd>
         </dl>
         <dl>
-          <dt>이메일 : </dt>
-          <dd><a href="mailto:zbshtkdi@naver.com">zbshtkdi@naver.com</a></dd>
+          <dt>
+            <a href="mailto:q49348131@gmail.com"><img src="./images/icon/icons8-gmailW-30.png" alt="mail">
+            </a>
+          </dt>
+          <dd><a href="mailto:q49348131@gmail.com">q49348131@gmail.com</a></dd>
         </dl>
-      </div>
-      <form action="#" method="post">
-        <fieldset>
-          <legend class="hide">나에게 메일로</legend>
-          <ul>
-          <li>
-            <label for="userName">Name</label>
-            <input type="text" id="userName" placeholder="Name" required>
-          </li>
-          <li>
-            <label for="userEmail">Email</label>
-            <input type="email" id="userEmail" placeholder="Email" required>
-          </li>
-          <li>
-            <label for="ueserPhone">Phone</label>
-            <input type="tel" id="ueserPhone" placeholder="Phone" required>
-          </li>
-          <li>
-            <label for="userMessage">Message</label>
-            <textarea id="userMessage" cols="30" rows="10" placeholder="나에게 메세지를"></textarea>
-          </li>
-        </ul>
-        <p><input type="submit" value="submit"></p>
-        </fieldset>
-      </form>
+        <dl>
+          <dt>
+            <a href="https://github.com/kyunosaya">
+              <img src="./images/icon/icons8-githubW-30.png" alt="github">
+            </a>
+          </dt>
+          <dd><a href="https://github.com/kyunosaya">github.com/kyunosaya</a></dd>
+        </dl>
+      </section>
     </div>
    </div>
   </article>
@@ -226,19 +214,29 @@
       <h4 class="hide">서브메뉴</h4>
       <ul>
         <li><a href="#wrap">Home</a></li>
-        <li><a href="#box02">About</a></li>
-        <li><a href="#box03">Info</a></li>
+        <li><a href="#box02">Info</a></li>
+        <li><a href="#box03">About</a></li>
         <li><a href="#box04">Skill</a></li>
         <li><a href="#box05">Work</a></li>
         <li><a href="#box06">Contect</a></li>
       </ul>
       <h4 class="hide">top</h4>
-      <p class="top"><a href="#wrap">top</a></p>
+      <p class="top"><a href="#wrap">top</a>top</p>
     </aside>
   
   <!-- footer -->
     <footer>
-      <small>Copyright &copy; 2022 Saya's Portfolio. All Rights Reserved.</small>
+      <div>
+        <small>Copyright &copy; 2022 Saya's Portfolio. All Rights Reserved.</small>
+      </div>
     </footer>
+</div>
+
+<script>
+  close();
+  resize();
+  menu();
+  topBtn();
+</script>
 </body>
 </html>

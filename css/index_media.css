@@ -35,8 +35,19 @@ header>div,article>div{
     }
 }/*  */
 
-
+/* 타블렛 */
 @media screen and (max-width:989px) and (min-width:580px){
+  /* 공통 */
+  #box02,#box03,#box04,#box05,#box06{
+    padding:80px 0;
+  }
+  div>h3{
+    font-size:48px;
+    text-align: center;
+    margin-bottom: 70px;
+    line-height: 50px;
+  }
+
     /* header */
 header{
     position:fixed;
@@ -46,47 +57,80 @@ header{
     }
 header>div{
     display: block;
-    text-align: center;
+    }
+header h1>a{
+      margin-left:20px;
     }
 
   /* nav */
 nav{
       position:fixed;
-      /* left:0; */ 
-      left:-400px; top:0;
-      width:400px;
-      height:100%;
-      padding:0 40px;
+      /* right:0; */
+      right:-400px;
+      top:0px;
+      width:400px; height: 100%;
+      padding:0 30px;
       box-sizing: border-box;
-      background-color:rgba(0,0,0,0.8);
+      background-color: rgba(204, 204, 204, 0.9);
+      text-align: center;
+      z-index: 9999;
     }
 nav>ul{
-    width:100%; height:100%;
-    /* background-color:green; */
+    width:100%;
     flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
+    align-items: center;
+    padding-top:100px;
     }
 nav>ul>li{
     width:100%;
     margin-left:0px;
-    border-bottom:1px solid #fff;
+    border-bottom:1px solid rgba(0, 0, 0, 0.2);
+    }
+nav>ul>li:last-child{
+    padding-bottom: 20px;
+    border-style: none;
     }
 nav>ul>li>a{
     line-height: 60px;
+    color: #404040;
     }
+nav .close{
+      display: block;
+      position: absolute;
+      right:20px; top:20px;
+      width:30px; height:30px;
+    }
+nav .close>span{
+      background-color: #404040;
+    }
+
 #btn{
     display: block;
     }
-nav.close{
-    display:block;
+p#btn{
+      width:30px; height:20px;
+      position:absolute;
+      top:50%; right:20px;
+      margin-top:-10px;
     }
-
+p#btn>span{ /* 공통 */
+      width:100%;
+      height:2px;
+      background-color: white;
+      position:absolute;
+    }
+p#btn>span:nth-child(1){
+      top:0; left:0;
+    }
+p#btn>span:nth-child(2){
+      top:50%; left:0;
+      margin-top: -1px;
+    }
+p#btn>span:nth-child(3){
+      bottom:0; left:0;
+    }
 
     /* box01 */
-#box01{
-    height:100vh;
-    }
 #box01>h2{
     width:100%;
     border:none;
@@ -95,171 +139,157 @@ nav.close{
     font-size:50px;
     }
 #box01>ul>li{
-    background-size:auto  100%;
+    background-size:auto 100%;
     }
-
 
     /* box02 */
 #box02>div{
     justify-content:space-evenly;
     }
 
-
     /* box03 */
 #box03>div>div{
     padding-left: 0px;
+    width:90vw;
     }
 #box03>div>div>figure{
     position:static;
     text-align: center;
+    margin: 0 auto 30px;
+    width:50vw;
     }
 #box03 .title{
     text-align: center;
     }
-
 
     /* box04 */
 #box04>div>div{
     display:block;
     }
 #box04>div>div>div{
-    width:88vw;
+    width:90vw;
     margin: 0 auto;
     /* background-color: aqua; */
     }
-#box04>div>div>div>.title{
-    text-align: center;
-    }
-#box04>div>div>div>.text{
+#box04 .text{
     width:auto;
+    text-align:left;
+    }
+#box04 .text>li:last-child{
+    margin-bottom: 50px;
     }
 #box04>div>div>ul{
-    width:60vw;
+    width:90vw;
     margin: 0 auto;
     overflow:hidden;
+    text-align:left;
     }
-
 
       /* box05 */
-    /* 전체 : 버튼 */
-#box05 .box{
+/* #box05 .box{
     position: relative;
-    }
-#box05 #show{
-    width:80vw;
-    margin:0 auto;
-    }
+    } */
 #box05 #all{
-    width:160vw;
-    /* display:flex;
-    flex-wrap:wrap;
-    justify-content: space-around; */
+    width:90vw;
+    margin:0 auto;
     }
 #box05 #all>figure{
-    width:24vw;
-    margin-bottom:0;
-    margin: 0 1.333333vw 0px;
-    }
-#box05 #all>figure>img{margin-bottom:15px;}
-        /* 버튼 군단 */
-#box05 .box>.prev{
-    position: absolute;
-    top:50%; left:3vw;
-    width:3vw; height:3vw;
-    background-color: red;
-    }
-#box05 .box>.next{
-    position: absolute;
-    top:50%; right:3vw;
-    width:3vw; height:3vw;
-    background-color: red;
-    }
-
-
-/* box06*/
-#box06>div>div{
-    width:88vw;
-    margin:0 auto;
     display: block;
-    }
-#box06>div>div>div{
-    width:auto;
-    /* margin-bottom: 45px; */
-    }
-#box06>div>div>div .title{
+    width:100%;
     text-align: center;
+    margin-bottom:200px;
     }
-#box06>div>div>div .text{
-    text-align: center;
-    width:auto;
+#box05 figure>figcaption{
+      width:100%;
     }
-#box06>div>div>div dl{
-    width:76vw;
-    margin-bottom: 20px;
-    margin:0 auto 1px;
+#box05 .title{
+      width:100%;
+      text-align: center;
+      margin-bottom: 30px;
     }
-#box06>div>div>div dl>dt{
-    display:inline-block;
+#box05 .text{
+      margin-bottom:50px;
+      text-align: center;
     }
-#box06>div>div>div dl>dd{
-    display:inline-block;
-    padding-left:0px;
+        /* 버튼 군단 */
+#box05 .btns{
+      width:100%;
+      margin:0 auto;
+      left:0; bottom:-80px;
+      display: flex;
+      justify-content: space-around;
+    }
+#box05 .btns>button{
+      width:150px;
+      margin-right:0px;
     }
 
-#box06>div>div>form{
-    width:76vw;
-    padding:0 0px;
-    margin:0 auto;
+    /* box06*/
+    #box06 dl{
+      margin:0 auto 10px;
     }
+
+    /* aside */
+    aside .top{
+      right:60px; bottom:20px;
+    }
+
 }/*  */
 
 
-
+/* 모바일 */
 @media screen and (max-width:579px) and (min-width:230px){
     /* 공통 */
     #box02,#box03,#box04,#box05,#box06{
-        padding:40px 0;
+        padding:60px 0;
       }
     div>h3{
-        font-size:35px;
+        font-size:2rem;
         text-align: center;
         margin-bottom: 35px;
       }
     .title{
-        font-size:30px;
+        font-size:1.875rem;
         margin-bottom:30px;
       }
     .text{
         margin-bottom:30px;
       }
     
-
     /* header */
-    header{
-        position:fixed;
-        width:100%;
-        padding:10px 0;
-        z-index: 700;
-      }
+
+        /* header */
+        #wrap{
+          height:60px;
+        }
+        header{
+          z-index: 700;
+          padding:15px 0;
+          }
+      header>div{
+          display: block;
+          }
       header>div{
         display:block;
         text-align: center;
       }
       header h1>a{
-          font-weight: normal;
+        font-family: 'Raleway', sans-serif;
+        font-size:1.5rem;
+        font-weight: bold;
+        color:white;
       }
 
     /* nav */
     nav{
         position:fixed;
-        /* left:0; */
-        left:-100%; 
-        top:0;
-        background-color: rgba(0,0,0,0.5);
+        left:0; top:60px;
+        display: none;
+        background-color: rgba(204, 204, 204, 0.9);
         width:100%; height:100%;
-        padding:10vw;
+        padding:7vw;
         box-sizing: border-box;
-        z-index: 900; /* 안전빵 */
+        z-index: 900;
     }
     nav>ul{
         flex-direction: column;
@@ -269,49 +299,59 @@ nav.close{
       nav>ul>li{
         margin-left:0px;
         width:100%;
-        border-bottom: 1px solid white;
+        border-bottom:1px solid rgba(0, 0, 0, 0.2);
       }
       nav>ul>li>a{
         line-height:80px;
+        color: #404040;
       }
+      nav .close{
+        display: none !important;
+      }
+
+      /* header버튼 */
+      #btn{
+        display: block;
+        }
+    p#btn{
+          width:20px; height:20px;
+          position:absolute;
+          top:50%; right:15px;
+          margin-top:-10px;
+        }
+    p#btn>span{ /* 공통 */
+          width:100%;
+          height:2px;
+          background-color: white;
+          position:absolute;
+        }
+    p#btn>span:nth-child(1){
+          top:0; left:0;
+        }
+    p#btn>span:nth-child(2){
+          top:50%; left:0;
+          margin-top: -1px;
+        }
+    p#btn>span:nth-child(3){
+          bottom:0; left:0;
+        }
 
     /* box01 */
     #box01{
-        /* width:auto; */
-        height : calc(100vh - 54px);
-      }
+      height : calc(100vh - 60px);
+    }
       #box01>h2{
         position:absolute;
         left:0%; top:50%;
         width:100%; height:auto;
         border:none;
         margin:-70px 0 0 0px;
-        /* display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Raleway',sans-serif; */
-        font-size:35px;
-        /* color:white;
-        font-weight: lighter;
-        line-height: 70px;
-        text-align: center; */
+        font-size:2rem;
       }
       #box01>ul>li{
-        background:url('../images/blue.jpg') no-repeat center top;
-        background-position:right top;
-        background-size: auto 100%;
-      }
-      #box01>.prev{
-        width:5vw; height:5vw;
-        left:5vw;
-        margin-top:-2.5vw;
-      }
-      #box01>.next{
-        width:5vw; height:5vw;
-        right:5vw;
-        margin-top:-2.5vw;
-      }
-
+        background-size:auto 100%;
+        background-position: top right;
+        }
 
       /* box02 */
       #box02>div{
@@ -321,16 +361,16 @@ nav.close{
       #box02>div>dl{
         width:auto;
         padding:20px 0;
-        background-image:none;
         margin-bottom: 25px;
+        background-image:none;
       }
-      #box02>div>dl:nth-child(2){background-image:none;}
       #box02>div>dl:nth-child(3){background-image:none;}
+      #box02>div>dl:nth-child(4){background-image:none;}
       #box02>div>dl:last-child{margin-bottom: 0;}
       #box02>div>dl>dt{
         margin-bottom: 20px;
+        font-weight:900;
       }
-
 
       /* box03 */
       #box03>div>div{
@@ -340,7 +380,8 @@ nav.close{
       #box03>div>div>figure{
         position: static;
         text-align: center;
-        margin-bottom: 30px;
+        margin:0 auto 30px;
+        width:70vw; height:auto;
       }
       #box03>div>div>div{
           width:90vw;
@@ -376,80 +417,69 @@ nav.close{
         margin: 0 auto;
       }
 
-
-
       /* box05 */
-      #box05 .box{
-        position: relative;
-      }
-      #box05 #show{
-        width:80vw;
+    #box05 #all{
+        width:90vw;
         margin:0 auto;
-        /* overflow: hidden; */
-      }
-      #box05 #all{
-        width:240vw;
-      }
-      #box05 #all>figure{
-        width:30vw;
-        margin-bottom:0px;
-        margin: 0 2.5vw;
-      }
-      #box05 #all>figure>img{
-        margin-bottom:10px;
-      }
-      
-        /* 버튼 군단 */
-      #box05 .box>.prev{
-          width:5vw; height:5vw;
-          position:absolute;
-          left:2.5vw; top:50%;
-          margin-top:-2.5vw;
-          background-color: red;
-      }
-      #box05 .box>.next{
-        width:5vw; height:5vw;
-        position:absolute;
-        right:2.5vw; top:50%;
-        margin-top:-2.5vw;
-        background-color: red;
-      }
-
+        }
+    #box05 #all>figure{
+        display: block;
+        width:100%;
+        text-align: center;
+        margin-bottom:230px;
+        }
+    #box05 figure>figcaption{
+          width:100%;
+        }
+    #box05 .title{
+          width:100%;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+    #box05 .text{
+          margin-bottom:30px;
+          text-align: center;
+        }
+            /* 버튼 군단 */
+    #box05 .btns{
+          width:100%;
+          margin:0 auto;
+          position: absolute;
+          left:0; bottom:-190px;
+          display: block;
+        }
+    #box05 .btns>button{
+          width:60%;
+          margin:0 0px 10px 0;
+        }
 
       /* box06 */
       #box06>div>div{
-        width:88vw;
+        width:90vw;
         margin:0 auto;
+        }
+    #box06 dl{
+        margin:0 auto 30px;
         display: block;
         }
-    #box06>div>div>div{
-        width:auto;
-        /* margin-bottom: 45px; */
-        }
-    #box06>div>div>div .title{
-        text-align: center;
-        }
-    #box06>div>div>div .text{
-        text-align: center;
-        width:auto;
-        }
-    #box06>div>div>div dl{
-        width:76vw;
-        margin-bottom: 20px;
-        margin:0 auto 1px;
-        }
-    #box06>div>div>div dl>dt{
-        display:inline-block;
-        }
-    #box06>div>div>div dl>dd{
-        display:inline-block;
+    #box06 dt{
+      margin-bottom: 0;
+      height: 30px;
+    }
+    #box06 dd{
         padding-left:0px;
+        line-height:26px;
         }
-    
-    #box06>div>div>form{
-        width:76vw;
-        padding:0 0px;
-        margin:0 auto;
+
+        /* aside */
+        aside>ul{
+          display: block;
         }
-        /* sample */
+        aside .top{
+          right:40px; bottom:5px;
+        }
+        aside .top::before{
+          width: 15px; height: 15px;
+        }
+
 }/*  */
