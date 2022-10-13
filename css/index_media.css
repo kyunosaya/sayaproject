@@ -314,10 +314,10 @@ p#btn>span:nth-child(3){
         display: block;
         }
     p#btn{
-          width:20px; height:20px;
+          width:24px; height:24px;
           position:absolute;
           top:50%; right:15px;
-          margin-top:-10px;
+          margin-top:-12px;
         }
     p#btn>span{ /* 공통 */
           width:100%;
@@ -333,7 +333,27 @@ p#btn>span:nth-child(3){
           margin-top: -1px;
         }
     p#btn>span:nth-child(3){
-          bottom:0; left:0;
+          top:100%; left:0;
+        }
+
+        /*  */
+        p#btn{
+          /* width:30px; height:30px;
+          right:10px;
+          margin-top:-15px; */
+        }
+    p#btn>span:nth-child(1){
+          /* top:50%; left:0;
+          transform: rotate(-45deg); */
+          transition: all 0.5s linear
+        }
+    p#btn>span:nth-child(2){
+          /* opacity: 0; */
+        }
+    p#btn>span:nth-child(3){
+          /* top:50%; left:0;
+          transform: rotate(45deg); */
+          transition: all 0.5s linear
         }
 
     /* box01 */

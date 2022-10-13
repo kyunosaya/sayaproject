@@ -29,7 +29,6 @@ img{
 header>div,article>div{
   width:98%; /* 1320px; */
   margin: 0 auto;
-  /* background-color:pink; */
 }
 #box02,#box03,#box04,#box05,#box06{
   padding:85px 0;
@@ -114,6 +113,9 @@ nav .close>span:last-child{
   display: none;
   /* background-color: red; */
 }
+#btn, .close, .top:hover{
+  cursor: pointer;
+}
 
 /* box01 */
 #box01{
@@ -131,11 +133,10 @@ nav .close>span:last-child{
   justify-content: center;
   align-items: center;
   font-size:3rem;
-  color:white;
-  font-weight: lighter;
+  color:#404040;
   line-height:80px;
   text-align: center;
-  font-weight:500;
+  font-weight:900;
 }
 #box01>ul{
   width:100%;
@@ -143,8 +144,9 @@ nav .close>span:last-child{
 }
 #box01>ul>li{
   width:100%; height:100%;
-  background:url('../images/blue.jpg') no-repeat center top;
-  background-size:100%;
+  background:url('../images/pink.jpg') no-repeat center top;
+  /* background:linear-gradient(to bottom, #EA8D38,#f3a65f, white); */
+  /* background-size:100%; */
   text-indent:-9999px;
 }
 /* #box01>ul>li.no02{background-image: url('../images/pink.jpg');}
